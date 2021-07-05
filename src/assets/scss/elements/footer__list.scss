@@ -1,0 +1,13 @@
+.footer__list {
+  li {
+    margin-bottom: 0.8rem;
+    line-height: 2.4rem;
+
+    a {
+      text-decoration: none;
+      @include small;
+      line-height: 2.4rem;
+      color: $white;
+    }
+  }
+}

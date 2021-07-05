@@ -1,0 +1,37 @@
+.header__left {
+  width: 50%;
+
+  h3 {
+    @include h3;
+    font-weight: 700;
+    color: $black1;
+    margin-bottom: 2.4rem;
+  }
+
+  p {
+    @include normal;
+    line-height: 2.6rem;
+    font-weight: 500;
+    color: $grey1;
+  }
+}
+
+.header__right {
+  width: 50%;
+  padding-left: 13rem;
+
+  ul {
+    li {
+      @include normal;
+      line-height: 2.6rem;
+      color: $grey1;
+      position: relative;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: -1.5rem;
+      }
+    }
+  }
+}

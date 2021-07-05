@@ -1,0 +1,27 @@
+.header__nav {
+  margin-right: 23.1rem;
+
+  .header__menu {
+    li {
+      margin-right: 7.2rem;
+      padding: 3.5rem 0rem 3.1rem;
+
+      a {
+        @include medium;
+        text-decoration: none;
+        color: $grey1;
+      }
+
+      >a:hover {
+        color: $success;
+
+      }
+
+      border-bottom: 4px solid transparent;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}

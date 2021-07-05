@@ -1,0 +1,30 @@
+.products {
+  width: 100%;
+  padding: 5.6rem 9.6rem 0;
+
+  &__container {
+    padding: 0 7.4rem 5.6rem;
+  }
+
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__form {
+    justify-content: center;
+  }
+
+  &__button {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  &__main {
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+  }
+
+  &__footer {
+    justify-content: center;
+  }
+}

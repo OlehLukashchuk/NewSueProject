@@ -1,0 +1,75 @@
+.product-element {
+  width: 23.6rem;
+
+  &__image {
+    margin-bottom: 1.4rem;
+    position: relative;
+
+    &::after {
+      content: '-20%';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.8rem 1.4rem;
+      @include small;
+      letter-spacing: 0.1rem;
+      font-weight: 600;
+      background-color: $error;
+    }
+  }
+
+  &__text {
+    @include small;
+    line-height: 2.26rem;
+    color: $grey1;
+    margin-bottom: 1.2rem;
+
+    .product-element__price {
+      margin-top: 0.8rem;
+
+      &_current {
+        @include normal;
+        display: inline-block;
+        color: $grey1;
+        font-weight: bold;
+        margin-right: 1.6rem;
+      }
+
+      &_old {
+        @include small;
+        text-decoration-line: line-through;
+        color: $grey3;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 1.4rem 4.6rem;
+    background-color: $error;
+    border: none;
+    @include small;
+    font-weight: 600;
+    color: $white;
+  }
+
+
+  &__image_new {
+    &::after {
+      @include elementAfter('новинка', $success);
+    }
+  }
+
+
+  &__image_hit {
+    &::after {
+      @include elementAfter('хіт продажів', $secondary);
+    }
+  }
+
+  &__image_none {
+    &::after {
+      display: none;
+    }
+  }
+}

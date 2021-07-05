@@ -1,0 +1,13 @@
+.greetings-link {
+  display: inline-block;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  background-color:$secondary;
+
+  a {
+    @include small;
+    font-weight: 600;
+    color: $white;
+    text-decoration: none;
+  }
+}

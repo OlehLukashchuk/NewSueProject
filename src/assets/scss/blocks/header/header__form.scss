@@ -1,0 +1,16 @@
+.header__form {
+  .header__button {
+    margin-right: 7.2rem;
+  }
+
+  .header__link {
+    >a {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  .header__link:nth-child(3) {
+    margin: 0 1.2rem;
+  }
+}

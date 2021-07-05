@@ -1,0 +1,35 @@
+.footer__link {
+  width: 3.2rem;
+  height: 3.2rem;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  ;
+
+  &_instagram {
+    background: url('../images/insta.svg') no-repeat center;
+
+  }
+
+  &_facebook {
+    background: url('../images/facebook.svg') no-repeat center;
+
+
+  }
+
+  &_youtube {
+    background: url('../images/youtube.svg') no-repeat center;
+
+
+  }
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 2.4rem;
+}

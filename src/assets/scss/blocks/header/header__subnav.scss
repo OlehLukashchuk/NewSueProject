@@ -1,0 +1,11 @@
+.header__subnav {
+  height:0px;
+  width:100%;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  background-color: $white;
+  transition: height 1s ease;
+  padding: 2.4rem 9.6rem;
+
+}

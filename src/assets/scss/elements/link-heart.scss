@@ -1,0 +1,4 @@
+.link-heart{
+  @include littleButton;
+  background: url('../images/LIKED.svg');
+}

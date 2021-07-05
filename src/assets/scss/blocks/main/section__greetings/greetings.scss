@@ -1,0 +1,23 @@
+.greetings {
+  &__header {
+    padding: 6.4rem 9.6rem;
+    background-color: $primary;
+  }
+
+  &__link {
+    margin-top: 3.2rem;
+
+  }
+
+  &__main {
+    min-height: 72rem;
+  }
+
+  &__footer {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+  &__button{
+    @extend .product-link;
+  }
+}

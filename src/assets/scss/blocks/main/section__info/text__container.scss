@@ -1,0 +1,37 @@
+.text__container {
+  color: $grey1;
+
+  .text__left {
+    width: 8.2rem;
+    font-family: 'MontserratAlt-Bold';
+    font-size: 9.6rem;
+    line-height: 6.16rem;
+    color: $black1;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2.4rem
+  }
+
+  .text__right {
+    p {
+      @include small;
+      line-height: 2.4rem;
+    }
+  }
+
+  >h6 {
+    @include h6;
+    font-weight: 600;
+    margin-bottom: 1rem
+  }
+
+  >p {
+    @include small;
+    line-height: 2.4rem;
+  }
+
+}
+
+.text__container:not(:last-child){
+  margin-bottom: 2.4rem;
+}

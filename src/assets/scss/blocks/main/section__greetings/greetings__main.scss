@@ -1,0 +1,32 @@
+.greetings__main {
+
+  .greetings__left {
+    width: 50%;
+    background-image: url('../images/greetingsLeft.jpg');
+    position: relative;
+  }
+
+  .greetings__left:hover {
+    >.greetings__text {
+      .greetings__linkArrow {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .greetings__right {
+    width: 50%;
+    background-image: url('../images/greetingsRight.jpg');
+    position: relative;
+  }
+
+  .greetings__right:hover {
+    >.greetings__text{
+      .greetings__linkArrow {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
