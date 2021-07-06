@@ -824,15 +824,15 @@ body {
 }
 
 .footer__link_instagram {
-    background: url("../images/insta.svg") no-repeat center;
+    background: transparent url("../images/insta.svg") no-repeat center;
 }
 
 .footer__link_facebook {
-    background: url("../images/facebook.svg") no-repeat center;
+    background: transparent url("../images/facebook.svg") no-repeat center;
 }
 
 .footer__link_youtube {
-    background: url("../images/youtube.svg") no-repeat center;
+    background: transparent url("../images/youtube.svg") no-repeat center;
 }
 
 .footer__link:not(:last-child) {
