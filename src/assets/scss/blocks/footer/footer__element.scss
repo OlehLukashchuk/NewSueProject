@@ -1,5 +1,4 @@
 .footer__element {
-  width: 25%;
 
   >img {
     margin-bottom: 8.8rem;
@@ -26,12 +25,7 @@
   }
 }
 
-.footer__element:nth-child(3) {
-  padding-left: 10rem;
-}
-
 .footer__element:last-child {
-  padding-left: 15rem;
 
   ul {
     li:nth-child(2) {
