@@ -1,14 +1,25 @@
 let catalogButton = document.getElementById("catalog");
-let catalogNav = document.querySelector(".subnav__container");
+let aboutButton = document.getElementById("about");
+let catalogNav = document.querySelector(".subnav1");
+let aboutNav = document.querySelector(".subnav2");
 
 catalogButton.addEventListener("mouseover", (event) => {
   event.target.parentElement.style.borderBottom = "4px solid #888440";
+  aboutButton.parentElement.style.borderBottom = "4px solid transparent";
   catalogNav.style.height = "27rem";
+  aboutNav.style.height = "0";
 });
-
+aboutButton.addEventListener("mouseover", (event) => {
+  event.target.parentElement.style.borderBottom = "4px solid #888440";
+  catalogButton.parentElement.style.borderBottom = "4px solid transparent";
+  aboutNav.style.height = "27rem";
+  catalogNav.style.height = "0";
+});
 $(".header__subnav").on("mouseleave", (event) => {
   catalogButton.parentElement.style.borderBottom = "4px solid transparent";
+  aboutButton.parentElement.style.borderBottom = "4px solid transparent";
   catalogNav.style.height = 0;
+  aboutNav.style.height = 0;
 });
 
 $(document).ready(() => {

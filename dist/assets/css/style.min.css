@@ -489,7 +489,7 @@ header {
   overflow: hidden;
 }
 
-.catalog-subnav {
+.catalog-subnav, .about-subnav {
   background-color: #FFFFFF;
   padding: 4.8rem 9.6rem;
 }
@@ -506,6 +506,22 @@ header {
   margin-bottom: 4.8rem;
 }
 .catalog-subnav__menu:not(:last-child) {
+  margin-right: 16rem;
+}
+
+.about-subnav__menu .about-subnav__item a {
+  font-size: 18px;
+  line-height: 25.2px;
+  text-decoration: none;
+  color: #333333;
+}
+.about-subnav__menu .about-subnav__item a:hover {
+  color: #ECB354;
+}
+.about-subnav__menu li:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+.about-subnav__menu:not(:last-child) {
   margin-right: 16rem;
 }
 

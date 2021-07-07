@@ -9,13 +9,39 @@
 }
 
 .catalog-subnav {
-
   background-color: $white;
   padding: 4.8rem 9.6rem;
 
   &__menu {
 
     .catalog-subnav__item {
+
+      a {
+        @include medium;
+        text-decoration: none;
+        color: $grey1;
+      }
+
+      a:hover {
+        color: $warning;
+      }
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__menu:not(:last-child) {
+    margin-right: 16rem;
+  }
+}
+
+.about-subnav{
+  @extend .catalog-subnav;
+  &__menu {
+
+    .about-subnav__item {
 
       a {
         @include medium;
