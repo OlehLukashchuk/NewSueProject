@@ -1,11 +1,39 @@
-.header__subnav {
-  height:0px;
-  width:100%;
+.subnav__container {
+  height: 0;
+  width: 100%;
+  transition: height 1s ease;
   position: absolute;
   left: 0;
+  top: 9.6rem;
   overflow: hidden;
-  background-color: $white;
-  transition: height 1s ease;
-  padding: 2.4rem 9.6rem;
+}
 
+.catalog-subnav {
+
+  background-color: $white;
+  padding: 4.8rem 9.6rem;
+
+  &__menu {
+
+    .catalog-subnav__item {
+
+      a {
+        @include medium;
+        text-decoration: none;
+        color: $grey1;
+      }
+
+      a:hover {
+        color: $warning;
+      }
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__menu:not(:last-child) {
+    margin-right: 16rem;
+  }
 }

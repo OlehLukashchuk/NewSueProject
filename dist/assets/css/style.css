@@ -4,6 +4,8 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import "https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600,700&display=swap";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -368,16 +370,6 @@ textarea {
 /* After */
 /* After */
 /* Buttons */
-@font-face {
-    font-family: "MontserratAlt-Bold";
-  src: url("../fonts/MontserratAlternates-Bold.ttf");
-}
-
-@font-face {
-    font-family: "MontserratAlt-Medium";
-  src: url("../fonts/MontserratAlternates-Medium.ttf");
-}
-
 html {
     font-size: 62.5%;
 }
@@ -386,7 +378,7 @@ body {
     background-color: white;
     font-size: 1.4rem;
     color: white;
-    font-family: "MontserratAlt-Medium";
+    font-family: "Montserrat+Alternates";
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -502,6 +494,67 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 3.2rem;
+    min-width: 0;
+    position: relative;
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.products__main .slider__item {
+    text-align: start;
+}
+
+.products__main .slider__item .product-element__image::after {
+    right: 4rem;
+}
+
+.products__main .slider__item button {
+    width: 87%;
+}
+
+.products__main .slick-list {
+    overflow: hidden;
+}
+
+.products__main .slick-track {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.products__main .slick-arrow {
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    top: 30%;
+    z-index: 999;
+    border: 0;
+    font-size: 0;
+}
+
+.products__main .slick-arrow.slick-prev {
+    left: -7%;
+    background: url("../images/ARROWLEFT.svg");
+}
+
+.products__main .slick-arrow.slick-next {
+    right: -3.5%;
+    background: url("../images/ARROWRIGRT.svg");
 }
 
 .products__footer {

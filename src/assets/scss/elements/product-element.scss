@@ -1,5 +1,6 @@
 .product-element {
-  width: 23.6rem ;
+  width: 23.6rem;
+  padding-right: 3.3rem;
 
   &__image {
     margin-bottom: 1.4rem;
@@ -15,6 +16,11 @@
       letter-spacing: 0.1rem;
       font-weight: 600;
       background-color: $error;
+
+      img {
+        max-width: 100%;
+
+      }
     }
   }
 

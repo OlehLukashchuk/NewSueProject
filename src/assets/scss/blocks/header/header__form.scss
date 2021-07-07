@@ -1,12 +1,15 @@
-.header__form {
+.header__content-form {
+  align-items: center;
+
   .header__button {
     margin-right: 7.2rem;
   }
 
   .header__link {
+    cursor: pointer;
     >a {
-      display: block;
       height: 100%;
+      display: inline-block;
     }
   }
 

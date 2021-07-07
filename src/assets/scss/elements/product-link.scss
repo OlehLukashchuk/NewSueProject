@@ -1,13 +1,15 @@
 .product-link {
-  @include medium;
-  display: inline-block;
-  border-bottom: 2px solid $success;
-  padding: 0;
-
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  color: $grey1;
 
   a {
     text-decoration: none;
-    color: $grey1;
+    color: inherit;
 
+  }
+
+  &:hover {
+    color: #888440;
   }
 }

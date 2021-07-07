@@ -1,16 +1,17 @@
-.header {
-  width: 100%;
-  min-height: 9.6rem;
-  padding: $containerPadding;
+header{
   position: relative;
+}
 
-  &__logo {
-    margin-right: 13rem;
+.header__content {
+  height: 9.6rem;
+  justify-content: space-between;
+
+  &-logo {
     padding: 2.6rem 0;
+    margin-right: 13rem;
   }
 
-  &__form {
+  &-form {
     padding: 3.5rem 0;
-
   }
 }

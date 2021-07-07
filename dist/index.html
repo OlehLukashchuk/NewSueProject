@@ -15,42 +15,62 @@
     <title>SUE | Landing Page</title>
   </head>
   <body>
-    <div class="page">
+    <div class="wrapper">
       <header class="header">
-        <div class="flexbox">
-          <div class="header__logo">
+        <div class="header__content flexbox _container">
+          <div class="header__content-logo">
             <img src="./assets/images/LOGO.svg" alt="" />
           </div>
-            <nav class="header__nav">
-              <ul class="flexbox header__menu">
-                <li><a href="" id="catalog">Каталог</a></li>
-                <li><a href="">Про нас</a></li>
-                <li><a href="">Відгуки</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">ua</a></li>
-              </ul>
-            </nav>
-            <form action="/" class="flexbox header__form ">
-              <button class="header__button button-search"></button>
-              <div class="header__link link-profile"><a href=""></a></div>
-              <div class="header__link link-heart"><a href=""></a></div>
-              <div class="header__link link-store"><a href=""></a></div>
-            </form>
-        </div>
-        <!-- <div class="header__catalog"> -->
-          <nav class="header__subnav catalog-subnav">
-            <ul class="flexbox catalog-subnav__menu">
-              <li class="catalog-subnav__item"><a href="">Косметика для обличчя</a></li>
-              <li class="catalog-subnav__item"><a href="">Косметика для тіла</a></li>
-              <li class="catalog-subnav__item"><a href="">Косметика для волосся</a></li>
-              <li class="catalog-subnav__item"><a href="">Вікова косметика (45+)</a></li>
-              <li class="catalog-subnav__item"><a href="">Комплексний догляд</a></li>
-              <li class="catalog-subnav__item"><a href="">Сонцезахисна косметика</a></li>
-              <li class="catalog-subnav__item"><a href="">Аксесуари</a></li>
-              <li class="catalog-subnav__item"><a href="">Подарнункові сертифікати</a></li>
+          <nav class="header__content-nav">
+            <ul class="flexbox header__content-menu">
+              <li><a href="" id="catalog">Каталог</a></li>
+              <li><a href="">Про нас</a></li>
+              <li><a href="">Відгуки</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">ua</a></li>
             </ul>
           </nav>
-        <!-- </div> -->
+          <form action="/" class="flexbox header__content-form">
+            <button class="header__button button-search"></button>
+            <div class="header__link link-profile"><a href=""></a></div>
+            <div class="header__link link-heart"><a href=""></a></div>
+            <div class="header__link link-store"><a href=""></a></div>
+          </form>
+          <div class="subnav__container">
+            <nav class="header__subnav catalog-subnav flexbox">
+              <ul class="catalog-subnav__menu">
+                <li class="catalog-subnav__item">
+                  <a href="">Косметика для обличчя</a>
+                </li>
+                <li class="catalog-subnav__item">
+                  <a href="">Косметика для тіла</a>
+                </li>
+                <li class="catalog-subnav__item">
+                  <a href="">Косметика для волосся</a>
+                </li>
+              </ul>
+              <ul class="catalog-subnav__menu">
+                <li class="catalog-subnav__item">
+                  <a href="">Вікова косметика (45+)</a>
+                </li>
+                <li class="catalog-subnav__item">
+                  <a href="">Комплексний догляд</a>
+                </li>
+                <li class="catalog-subnav__item">
+                  <a href="">Сонцезахисна косметика</a>
+                </li>
+              </ul>
+              <ul class="catalog-subnav__menu">
+                <li class="catalog-subnav__item"><a href="">Аксесуари</a></li>
+                <li class="catalog-subnav__item">
+                  <a href="">Подарнункові сертифікати</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--subnav__container-->
+        </div>
+        <!--header__content-->
       </header>
 
       <main class="main">
@@ -59,200 +79,218 @@
 </div>
 <!--banner__container-->
 <section class="products">
-  <div class="products__container">
-    <div class="products__header">
-      <form action="/" class="flexbox products__form">
-        <button class="products__button product-button">Пропозиції</button>
-        <button class="products__button product-button">Новинки</button>
-        <button class="products__button product-button">Хіти продажів</button>
-      </form>
+  <div class="products__container _container">
+    <div class="products__box">
+      <div class="products__header">
+        <form action="/" class="flexbox products__form">
+          <a class="products__header-link product-link">Пропозиції</a>
+          <a class="products__header-link product-link">Новинки</a>
+          <a class="products__header-link product-link">Хіти продажів</a>
+        </form>
+      </div>
+      <!--products__header-->
+      <div class="slider1 slider-auto flexbox products__main">
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+      </div>
+      <!--products__main-->
+      <div class="flexbox products__footer">
+        <div class="products__footer-link product-link">
+          <a href="">переглянути усе</a>
+        </div>
+      </div>
+      <!--products__footer-->
     </div>
-    <!--products__header-->
-    <div class="slider flexbox products__main">
-      <div class="slider__item products__element product-element">
-        <div class="product-element__image">
-          <img data-lazy="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
-          </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
+    <div class="products__box">
+      <div class="products__header">
+        <p>Лінтній must have</p>
       </div>
-      <div class="slider__item products__element product-element">
-        <div class="product-element__image">
-          <img data-lazy="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
+      <!--products__header-->
+      <div class="slider2 flexbox products__main">
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image product-element__image_new">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
           </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-      <div class="slider__item products__element product-element">
-        <div class="product-element__image">
-          <img data-lazy="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
           </div>
+          <button class="product-element__button">Додати в корзину</button>
         </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-      <div class="slider__item products__element product-element">
-        <div class="product-element__image">
-          <img data-lazy="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
           </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-      <div class="slider__item products__element product-element">
-        <div class="product-element__image">
-          <img data-lazy="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
           </div>
+          <button class="product-element__button">Додати в корзину</button>
         </div>
-        <button class="product-element__button">Додати в корзину</button>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image product-element__image_hit">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image product-element__image_none">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
+        <div class="slider__item products__element product-element">
+          <div class="product-element__image product-element__image">
+            <img data-lazy="./assets/images/products_element.jpg" alt="" />
+          </div>
+          <div class="product-element__text">
+            <p>Repair</p>
+            <p>
+              Шампунь для сухого тa<br />
+              кучерявого волосся
+            </p>
+            <div class="product-element__price">
+              <span class="product-element__price_current">260 грн</span>
+              <span class="product-element__price_old">400 грн</span>
+            </div>
+          </div>
+          <button class="product-element__button">Додати в корзину</button>
+        </div>
       </div>
+      <!--products__main-->
+      <div class="flexbox products__footer">
+        <div class="products__footer-link product-link">
+          <a href="">переглянути усе</a>
+        </div>
+      </div>
+      <!--products__footer-->
     </div>
-    <!--products__main-->
-    <div class="flexbox products__footer">
-      <div class="products__link product-link">
-        <a href="">переглянути усе</a>
-      </div>
-    </div>
-    <!--products__footer-->
-  </div>
-  <!--products__container-->
-  <div class="products__container">
-    <div class="products__header">
-      <p>Лінтній must have</p>
-    </div>
-    <!--products__header-->
-    <div class="flexbox products__main">
-      <div class="products__element product-element">
-        <div class="product-element__image product-element__image_new">
-          <img src="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
-          </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-      <div class="products__element product-element">
-        <div class="product-element__image product-element__image">
-          <img src="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
-          </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-      <div class="products__element product-element">
-        <div class="product-element__image product-element__image_hit">
-          <img src="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
-          </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-      <div class="products__element product-element">
-        <div class="product-element__image product-element__image_none">
-          <img src="./assets/images/products_element.jpg" alt="" />
-        </div>
-        <div class="product-element__text">
-          <p>Repair</p>
-          <p>
-            Шампунь для сухого тa<br />
-            кучерявого волосся
-          </p>
-          <div class="product-element__price">
-            <span class="product-element__price_current">260 грн</span>
-            <span class="product-element__price_old">400 грн</span>
-          </div>
-        </div>
-        <button class="product-element__button">Додати в корзину</button>
-      </div>
-    </div>
-    <!--products__main-->
-    <div class="flexbox products__footer">
-      <div class="products__link product-link">
-        <a href="">переглянути усе</a>
-      </div>
-    </div>
-    <!--products__footer-->
   </div>
   <!--products__container-->
 </section>
 <!--products-->
 <section class="greetings">
-  <div class="greetings__container">
-    <div class="greetings__header">
+  <div class="greetings__container _container">
+    <div class="greetings__content">
       <h3>Привітики, подруго!</h3>
       <h5>
         Стільки всього гарного, а ти не знаєш свій тип шкіри?<br />Тицяй на
@@ -263,31 +301,41 @@
       </div>
     </div>
     <!--greetings__header-->
-    <div class="flexbox greetings__main">
-      <div class="greetings__left">
-        <div class="flexbox greetings__text">
-          <p>Головні етапи догляду за шкірою!</p>
-          <div class="greetings__linkArrow"><a href=""></a></div>
-        </div>
-      </div>
-      <div class="greetings__right">
-        <div class="flexbox greetings__text">
-          <p>Головні етапи догляду за шкірою!</p>
-          <div class="greetings__linkArrow"><a href=""></a></div>
-        </div>
-      </div>
-    </div>
-    <!--greetings__main-->
-    <div class="flexbox greetings__footer">
-      <div class="greetings__button">
-        <a href="">переглянути усе</a>
-      </div>
-    </div>
-    <!--greetings__footer-->
   </div>
   <!--greetings__container-->
 </section>
 <!--greetings-->
+<section class="main-stages">
+  <div class="main-stages__container">
+    <div class="main-stages__content flexbox">
+      <div class="main-stages__left">
+        <div class="main-stages__image">
+          <img src="./assets/images/stages-left.jpg" alt="" />
+        </div>
+        <div class="flexbox main-stages__text">
+          <p>Головні етапи догляду за шкірою!</p>
+          <div class="main-stages__linkArrow"><a href=""></a></div>
+        </div>
+      </div>
+      <div class="main-stages__right">
+        <div class="main-stages__image">
+          <img src="./assets/images/stages-right.jpg" alt="" />
+        </div>
+        <div class="flexbox main-stages__text">
+          <p>Головні етапи догляду за шкірою!</p>
+          <div class="main-stages__linkArrow"><a href=""></a></div>
+        </div>
+      </div>
+    </div>
+    <!--main-stages__content-->
+    <div class="flexbox main-stages__footer">
+      <div class="main-stages__link">
+        <a href="">читати SUE блог</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--main-stages-->
 <section class="info">
   <div class="info__parallax"></div>
   <div class="flexbox info__header">

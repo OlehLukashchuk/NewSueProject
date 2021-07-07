@@ -1,18 +1,38 @@
 .products {
-  width: 100%;
-  padding: 5.6rem 9.6rem 0;
 
   &__container {
-    padding: 0 7.4rem 5.6rem;
+    padding: 5.6rem 8.1rem;
+    position: relative;
+  }
+
+  &__box:not(:last-child) {
+    margin-bottom: 5.6rem;
   }
 
   &__header {
+    display: flex;
+    justify-content: center;
     margin-bottom: 4rem;
+
+    &-link {
+      @include large;
+
+      &:hover {
+        border-bottom: 2px solid $success;
+
+      }
+    }
+
+    &-link:nth-child(2) {
+      margin: 0 5.6rem;
+    }
+
+    p {
+      @include large;
+      color: $grey1;
+    }
   }
 
-  &__form {
-    justify-content: center;
-  }
 
   &__button {
     margin-right: 3rem;
@@ -24,21 +44,16 @@
     margin-bottom: 3.2rem;
     min-width: 0;
 
-    position: relative;
 
     .slider__item {
       text-align: start;
 
       .product-element__image {
         &::after {
-          right: 4rem;
+          right: 0.3rem;
         }
       }
 
-
-      button {
-        width: 87%;
-      }
     }
 
     .slick-slider {}
@@ -77,10 +92,10 @@
 
     /* Стрелка */
     .slick-arrow {
-      width:4.8rem;
+      width: 4.8rem;
       height: 4.8rem;
       position: absolute;
-      top: 30%;
+      top: 19%;
       z-index: 999;
       border: 0;
       font-size: 0;
@@ -88,14 +103,14 @@
 
     /* Стрелка влево */
     .slick-arrow.slick-prev {
-      left: -7%;
-      background : url('../images/ARROWLEFT.svg')
+      left: 1.1rem;
+      background: url('../images/ARROWLEFT.svg')
     }
 
     /* Стрелка вправо */
     .slick-arrow.slick-next {
-      right: -3.5%;
-      background : url('../images/ARROWRIGRT.svg')
+      right: 1.1rem;
+      background: url('../images/ARROWRIGRT.svg')
     }
 
     /* Стрелка не активная */
@@ -115,5 +130,10 @@
 
   &__footer {
     justify-content: center;
+
+    &-link {
+      @include medium;
+      border-bottom: 2px solid #888440 !important;
+    }
   }
 }
