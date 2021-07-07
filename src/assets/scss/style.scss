@@ -57,12 +57,12 @@ body {
 @import './blocks/main/section__products/products.scss';
 @import './blocks/main/section__greetings/greetings.scss';
 @import './blocks/main/section__main-stages/main-stages.scss';
-@import './blocks/main/section__info/info.scss';
-@import './blocks/main/section__info/info__parallax.scss';
-@import './blocks/main/section__info/info__header.scss';
+@import './blocks/main/section__organic/organic.scss';
+@import './blocks/main/section__info/info1.scss';
+@import './blocks/main/section__info/info2.scss';
+@import './blocks/main/section__info/info3.scss';
 @import './blocks/main/section__info/info__content.scss';
 @import './blocks/main/section__info/content__element.scss';
-@import './blocks/main/section__info/text__container.scss';
 @import './blocks/footer/footer.scss';
 @import './blocks/footer/footer__element.scss';
 @import './blocks/footer/footer__socialLinks.scss';
@@ -78,4 +78,5 @@ body {
 @import './elements/product-link.scss';
 @import './elements/greetings-link.scss';
 @import './elements/main-stage__linkArrow.scss';
+@import './elements/parallax.scss';
 @import './elements/footer__list.scss';

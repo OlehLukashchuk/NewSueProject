@@ -1,11 +1,9 @@
-.info__parallax {
-  width: 100vw;
-  height: 36.8rem;
-  position: absolute;
-  left: 0;
+.parallax {
+  min-height: 36.8rem;
   background-image:url('../images/parallax_img.jpg');
   background-attachment: fixed;
   background-repeat:no-repeat;
   background-size: cover;
   background-position-y: 83%;
+  margin-bottom: 6.4rem;
 }

@@ -1,0 +1,51 @@
+.info2 {
+  margin-bottom: 5.6rem;
+  &__right {
+    width: 50%;
+
+    img {
+      max-width: 100%;
+      transform: translateX(9.5rem);
+    }
+  }
+
+  &__left {
+    width: 50%;
+
+    &-title {
+      @include h3;
+      font-weight: 700;
+      color: $black1;
+      margin-bottom: 2.3rem;
+    }
+
+    p {
+      max-width: 63rem;
+      @include normal;
+      color: $grey1;
+    }
+
+    .text__container {
+      color: $grey1;
+      align-items: center;
+      margin-top: 2.4rem;
+
+      >h6 {
+        @include h6;
+        font-weight: 600;
+        margin-bottom: 1rem
+      }
+
+      >p {
+        @include small;
+        line-height: 2.4rem;
+      }
+
+      p:first-child {
+        @include medium;
+        font-weight: 600;
+      }
+    }
+
+  }
+}
