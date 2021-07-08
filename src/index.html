@@ -3,9 +3,11 @@ layout: default
 title: SUE | Landing Page
 ---
 
-<div class="banner__container">
-  <img src="./assets/images/BANNER SAMPLE.jpg" alt="" />
-</div>
+<picture class="banner__container">
+  <source srcset="./assets/images/bannerSample.jpg" media="(min-width:1248px)">
+  <source srcset="./assets/images/banner-mobile.jpg" media="(max-width:480px)">
+  <img src="./assets/images/bannerSample.jpg" alt="" />
+</picture>
 <!--banner__container-->
 <section class="products">
   <div class="products__container _container">

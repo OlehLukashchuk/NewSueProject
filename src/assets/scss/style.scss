@@ -44,7 +44,7 @@ body {
 
     @media (max-width:$md3+px) {
         max-width: none;
-        padding: 0 10px;
+        padding: 0 24px;
     }
 }
 
@@ -54,6 +54,7 @@ body {
 @import './blocks/header/header__nav.scss';
 @import './blocks/header/header__form.scss';
 @import './blocks/header/header__subnav.scss';
+@import './blocks/header/mobile-menu.scss';
 @import './blocks/main/section__products/products.scss';
 @import './blocks/main/section__greetings/greetings.scss';
 @import './blocks/main/section__main-stages/main-stages.scss';

@@ -71,6 +71,7 @@
               </ul>
             </nav>
           </div>
+          <!--subnav__container-->
           <div class="subnav__container subnav2">
             <nav class="header__subnav about-subnav flexbox">
               <ul class="about-subnav__menu">
@@ -92,14 +93,73 @@
             </nav>
           </div>
           <!--subnav__container-->
+          <div class="mobile-menu">
+            <div class="mobile-menu__search">
+              <input
+                type="text"
+                placeholder="Напиши, що шукаєш"
+                class="input-search"
+              />
+            </div>
+            <!--mobile-menu__search-->
+            <nav class="mobile-menu__nav _container">
+              <ul>
+                <li class="flexbox">
+                  <div class="mobile-subnav__buttonContainer flexbox">
+                    <button class="mobile-catalog">Каталог</button>
+                    <button class="mobile-catalog"></button>
+                  </div>
+                  <div class="mobile-subnav__container subnav-catalog">
+                    <ul class="mobile-subnav">
+                      <li><a href="">Косметика для обличчя</a></li>
+                      <li><a href="">Косметика для тіла</a></li>
+                      <li><a href="">Косметика для волосся</a></li>
+                      <li><a href="">Вікова косметика (45+)</a></li>
+                      <li><a href="">Комплексний догляд</a></li>
+                      <li><a href="">Сонцезахисна косметика</a></li>
+                      <li><a href="">Аксесуари</a></li>
+                      <li><a href="">Подарнункові сертифікати</a></li>
+                    </ul>
+                  </div>
+                  <!--subnav-catalog-->
+                </li>
+                <li>
+                  <div class="mobile-subnav__buttonContainer flexbox">
+                    <button class="mobile-about">Про нас</button>
+                    <button class="mobile-about"></button>
+                  </div>
+                  <div class="mobile-subnav__container subnav-about">
+                    <ul class="mobile-subnav">
+                      <li><a href="">Наші цінності</a></li>
+                      <li><a href="">Сертифікати</a></li>
+                      <li><a href="">Sue блог</a></li>
+                      <li><a href="">Доставка та оплата</a></li>
+                    </ul>
+                  </div>
+                  <!--subnav-about-->
+                </li>
+                <li><a href="">Відгуки</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Контакти</a></li>
+              </ul>
+            </nav>
+            <!--mobile-menu__nav-->
+            <div class="mobile-menu__footer flexbox _container">
+              <a href="">Мій профіль</a>
+              <button class="mobile-lang">ua</button>
+            </div>
+          </div>
+          <!--mobile-menu-->
         </div>
         <!--header__content-->
       </header>
 
       <main class="main">
-<div class="banner__container">
-  <img src="./assets/images/BANNER SAMPLE.jpg" alt="" />
-</div>
+<picture class="banner__container">
+  <source srcset="./assets/images/bannerSample.jpg" media="(min-width:1248px)">
+  <source srcset="./assets/images/banner-mobile.jpg" media="(max-width:480px)">
+  <img src="./assets/images/bannerSample.jpg" alt="" />
+</picture>
 <!--banner__container-->
 <section class="products">
   <div class="products__container _container">

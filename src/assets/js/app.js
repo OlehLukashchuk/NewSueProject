@@ -1,8 +1,15 @@
 let catalogButton = document.getElementById("catalog");
+let mobileCatalogButton = document.querySelectorAll(".mobile-catalog");
 let aboutButton = document.getElementById("about");
+let mobileAboutButton = document.querySelectorAll(".mobile-about");
+
 let catalogNav = document.querySelector(".subnav1");
+let mobileCatalog = document.querySelector(".subnav-catalog");
 let aboutNav = document.querySelector(".subnav2");
-let burgerMenu = document.querySelector(".burger-menu");
+let mobileAbout= document.querySelector(".subnav-about");
+
+let mobileMenu = document.querySelector('.mobile-menu');
+let burger = document.querySelector(".burger-menu");
 
 catalogButton.addEventListener("mouseover", (event) => {
   event.target.parentElement.style.borderBottom = "4px solid #888440";
@@ -51,6 +58,23 @@ $(document).ready(() => {
   });
 });
 
-burgerMenu.addEventListener('click',() => {
-  burgerMenu.classList.toggle('_active')
-})
+/* MOBILE */
+
+burger.addEventListener("click", () => {
+  mobileMenu.classList.toggle('_open');
+  burger.classList.toggle("_active");
+});
+
+for (let i = 0; i < mobileCatalogButton.length; i++) {
+  mobileCatalogButton[i].addEventListener("click", () => {
+    mobileCatalog.classList.toggle("_open");
+    mobileCatalogButton[1].classList.toggle("_open");
+  });
+}
+
+for (let i = 0; i < mobileAboutButton.length; i++) {
+  mobileAboutButton[i].addEventListener("click", () => {
+    mobileAbout.classList.toggle("_open");
+    mobileAboutButton[1].classList.toggle("_open");
+  });
+}
