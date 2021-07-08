@@ -51,6 +51,9 @@
       p:first-child {
         @include medium;
         font-weight: 600;
+        @media (max-width:$md3+px) {
+          font-size:1.6rem;
+        }
       }
     }
 

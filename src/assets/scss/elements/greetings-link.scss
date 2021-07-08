@@ -2,7 +2,13 @@
   display: inline-block;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
-  background-color:$secondary;
+  background-color: $secondary;
+
+  @media (max-width:$md3+px) {
+    width: 100%;
+    text-align: center;
+    padding: 1.1rem;
+  }
 
   a {
     @include small;

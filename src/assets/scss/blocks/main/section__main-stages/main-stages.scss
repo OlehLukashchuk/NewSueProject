@@ -27,6 +27,10 @@
   &__right {
     position: relative;
 
+    @media (max-width:$md3+px) {
+      display: none;
+    }
+
     &:hover {
       >.main-stages__text {
         .main-stages__linkArrow {
@@ -48,6 +52,15 @@
 
     p {
       @include normal;
+
+      @media (max-width:$md3+px) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    @media (max-width:$md3+px) {
+      padding: 1.6rem 2.4rem;
     }
   }
 

@@ -1,11 +1,16 @@
 .info2 {
   margin-bottom: 5.6rem;
+
   &__right {
     width: 50%;
 
     img {
       max-width: 100%;
       transform: translateX(9.5rem);
+
+      @media (max-width:$md3+px) {
+        width: 0;
+      }
     }
   }
 
@@ -23,6 +28,7 @@
       max-width: 63rem;
       @include normal;
       color: $grey1;
+
     }
 
     .text__container {
