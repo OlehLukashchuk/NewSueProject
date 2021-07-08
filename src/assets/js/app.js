@@ -2,6 +2,7 @@ let catalogButton = document.getElementById("catalog");
 let aboutButton = document.getElementById("about");
 let catalogNav = document.querySelector(".subnav1");
 let aboutNav = document.querySelector(".subnav2");
+let burgerMenu = document.querySelector(".burger-menu");
 
 catalogButton.addEventListener("mouseover", (event) => {
   event.target.parentElement.style.borderBottom = "4px solid #888440";
@@ -49,3 +50,7 @@ $(document).ready(() => {
     touchThreshold: 10,
   });
 });
+
+burgerMenu.addEventListener('click',() => {
+  burgerMenu.classList.toggle('_active')
+})

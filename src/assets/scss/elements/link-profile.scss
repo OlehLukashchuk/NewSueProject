@@ -1,4 +1,8 @@
-.link-profile{
+.link-profile {
   @include littleButton;
   background: url('../images/PROFILE.svg');
+
+  @media (max-width:$md3+px) {
+    display: none;
+  }
 }

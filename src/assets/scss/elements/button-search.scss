@@ -1,4 +1,8 @@
-.button-search{
+.button-search {
   @include littleButton;
   background: url('../images/SEARCH.svg');
+
+  @media (max-width:$md3+px) {
+    display: none;
+  }
 }

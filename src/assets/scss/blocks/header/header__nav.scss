@@ -1,5 +1,5 @@
 .header__content-nav {
-  margin-right: 23.1rem;
+  margin-right: 7.2rem;
 
   .header__content-menu {
     li {
@@ -21,6 +21,9 @@
 
     li:not(:last-child) {
       margin-right: 7.2rem;
+    }
+    @media (max-width:$md3+px) {
+      display: none;
     }
   }
 }
