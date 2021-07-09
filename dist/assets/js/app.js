@@ -1,9 +1,21 @@
 /* DOM */
 let catalogButton = document.getElementById("catalog");
-let mobileCatalogButton = document.querySelectorAll(".mobile-catalog");
+let mobileCatalogButton = document.querySelector(".mobile-catalog");
+let arrowCatalog = document.querySelector(".arrow-catalog");
+
 let aboutButton = document.getElementById("about");
-let mobileAboutButton = document.querySelectorAll(".mobile-about");
+let mobileAboutButton = document.querySelector(".mobile-about");
+let arrowAbout = document.querySelector(".arrow-about");
+
 let productButton = document.querySelectorAll(".product-element__button");
+
+let categoryList = document.querySelector('.category-list');
+let categoryButton = document.querySelector('.btn-category');
+let arrowCategory = document.querySelector('.arrow-category');
+
+let infoList = document.querySelector('.info-list');
+let infoButton = document.querySelector('.btn-info');
+let arrowInfo = document.querySelector('.arrow-info');
 
 let catalogNav = document.querySelector(".subnav1");
 let mobileCatalog = document.querySelector(".subnav-catalog");
@@ -13,12 +25,6 @@ let mobileAbout = document.querySelector(".subnav-about");
 let burger = document.querySelector(".burger-menu");
 let mobileMenu = document.querySelector(".mobile-menu");
 let productMobile = document.querySelector(".products-mobile");
-
-/* Slider */
-// $(document).ready(() => {
-
-// });
-/* Slider */
 
 /* Events */
 
@@ -117,18 +123,39 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("_active");
 });
 
-for (let i = 0; i < mobileCatalogButton.length; i++) {
-  mobileCatalogButton[i].addEventListener("click", () => {
-    mobileCatalog.classList.toggle("_open");
-    mobileCatalogButton[1].classList.toggle("_open");
-  });
-}
+mobileCatalogButton.addEventListener("click", () => {
+  mobileCatalog.classList.toggle("_open");
+  arrowCatalog.classList.toggle("_open");
+});
+arrowCatalog.addEventListener("click", () => {
+  mobileCatalog.classList.toggle("_open");
+  arrowCatalog.classList.toggle("_open");
+});
 
-for (let i = 0; i < mobileAboutButton.length; i++) {
-  mobileAboutButton[i].addEventListener("click", () => {
-    mobileAbout.classList.toggle("_open");
-    mobileAboutButton[1].classList.toggle("_open");
-  });
-}
+mobileAboutButton.addEventListener("click", () => {
+  mobileAbout.classList.toggle("_open");
+  arrowAbout.classList.toggle("_open");
+});
+arrowAbout.addEventListener("click", () => {
+  mobileAbout.classList.toggle("_open");
+  arrowAbout.classList.toggle("_open");
+});
 
+categoryButton.addEventListener("click", () => {
+  categoryList.classList.toggle("_open");
+  arrowCategory.classList.toggle("_open");
+})
+arrowCategory.addEventListener("click", () => {
+  categoryList.classList.toggle("_open");
+  arrowCategory.classList.toggle("_open");
+})
+
+infoButton.addEventListener("click", () => {
+  infoList.classList.toggle("_open");
+  arrowInfo.classList.toggle("_open");
+})
+arrowInfo.addEventListener("click", () => {
+  infoList.classList.toggle("_open");
+  arrowInfo.classList.toggle("_open");
+})
 /* MOBILE */

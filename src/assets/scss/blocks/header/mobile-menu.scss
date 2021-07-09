@@ -70,17 +70,6 @@
           font-weight: 600;
         }
 
-        .mobile-catalog:nth-child(2),
-        .mobile-about:nth-child(2) {
-          width: 1.6rem;
-          height: 1.6rem;
-          background: url('../images/arrow-down.svg')
-        }
-
-        .mobile-catalog:nth-child(2)._open,
-        .mobile-about:nth-child(2)._open {
-          background: url('../images/arrow-up.svg')
-        }
 
         >a:active {
           color: $success;

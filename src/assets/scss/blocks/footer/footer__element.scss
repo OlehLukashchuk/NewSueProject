@@ -1,12 +1,86 @@
 .footer__element {
+  @media (max-width:$md3+px) {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    @include small;
+    margin-bottom: 4px;
+
+    @media (max-width:$md3+px) {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-bottom: 8px;
+    }
+  }
+
+  p:first-child {
+    @include medium;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 1.6rem;
+
+    @media (max-width:$md3+px) {
+      @include normal;
+      font-weight: 600;
+    }
+  }
+
+  &-header {
+    @media (max-width:$md3+px) {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      @include medium;
+      font-weight: 600;
+      color: $white;
+      margin-bottom: 1.6rem;
+      border: 0;
+      padding: 0;
+      background: transparent;
+
+      @media (max-width:$md3+px) {
+        @include normal;
+        margin: 0;
+      }
+    }
+
+
+    .mobile-arrow {
+      display: none;
+      background: url('../images/arrowWhite-closed.svg');
+
+      @media (max-width:$md3+px) {
+        display: block;
+      }
+
+    }
+
+    .mobile-arrow._open {
+      background: url('../images/arrowWhite-open.svg');
+
+    }
+  }
 
   >img {
     margin-bottom: 8.8rem;
+
+    @media (max-width:$md3+px) {
+      display: none;
+    }
   }
 
   .footer__workTime {
     p {
       @include small;
+
+      @media (max-width:$md3+px) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
     }
 
     p:first-child {
@@ -14,22 +88,70 @@
       font-weight: 600;
       color: $white;
       margin-bottom: 1.6rem;
+
+      @media (max-width:$md3+px) {
+        @include normal;
+      }
     }
   }
+}
 
-  >p {
-    @include medium;
-    font-weight: 600;
-    color: $white;
-    margin-bottom: 1.6rem;
+.footer__element:first-child {
+  @media (max-width:$md3+px) {
+    display: none;
+  }
+}
+
+.footer__element:nth-child(2),
+.footer__element:nth-child(3) {
+  @media (max-width:$md3+px) {
+
+    .category-list,
+    .info-list {
+      height: 0;
+      overflow: hidden;
+      transition: height 1s ease;
+
+      .footer__list {
+        padding: 1.6rem 2.4rem;
+      }
+    }
+
+    .category-list._open {
+      height: 20rem;
+    }
+
+    .info-list._open {
+      height: 24rem;
+    }
+  }
+}
+
+.footer__element:nth-child(4) {
+  display: none;
+
+  @media (max-width:$md3+px) {
+    display: block;
+
   }
 }
 
 .footer__element:last-child {
 
-  ul {
-    li:nth-child(2) {
+  .footer__list {
+    @media (max-width:$md3+px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul {
       margin-bottom: 1.6rem;
+    }
+
+    ul:first-child {
+      @media (max-width:$md3+px) {
+        margin-right: 7.2rem;
+      }
     }
   }
 }
