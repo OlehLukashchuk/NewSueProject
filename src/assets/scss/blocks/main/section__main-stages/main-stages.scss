@@ -8,11 +8,19 @@
   &__image {
     img {
       max-width: 100%;
+
+      @media (max-width:$md3+px) {
+        min-width: 100%;
+      }
     }
   }
 
   &__left {
     position: relative;
+
+    @media (max-width:$md3+px) {
+      width: 100%;
+    }
 
     &:hover {
       >.main-stages__text {
@@ -67,10 +75,19 @@
   &__footer {
     justify-content: center;
 
+    @media (max-width:$md3+px) {
+      padding: 0 2.4rem;
+    }
+
     .main-stages__link {
       @include medium;
       @extend .product-link;
       border-bottom: 2px solid #888440 !important;
+
+      @media (max-width:$md3+px) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
     }
   }
 }

@@ -1,14 +1,37 @@
 .organic {
   margin-bottom: 6.4rem;
 
+  @media (max-width:$md3+px) {
+    margin-bottom: 2.4rem;
+  }
+
+  &__container {
+    @media (max-width:$md3+px) {
+      flex-direction: column;
+    }
+  }
+
   &__left {
     max-width: 50%;
+    margin-right: 17rem;
+
+    @media (max-width:$md3+px) {
+      max-width: 100%;
+      margin: 0 0 1.6rem 0;
+    }
 
     h3 {
       @include h3;
       font-weight: 700;
       color: $black1;
       margin-bottom: 2.4rem;
+
+      @media (max-width:$md3+px) {
+        @include medium;
+        font-weight: 600;
+        color: $grey1;
+        margin-bottom: 1.6rem;
+      }
     }
 
     p {
@@ -16,12 +39,28 @@
       line-height: 2.6rem;
       font-weight: 500;
       color: $grey1;
+
+      span {
+        @media (max-width:$md3+px) {
+          display: block;
+        }
+      }
+
+      @media (max-width:$md3+px) {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+      }
     }
 
-    margin-right: 17rem;
   }
 
   &__right {
+    @media (max-width:$md3+px) {
+      padding-left: 1.7rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
     ul {
       li {
         @include normal;
@@ -29,12 +68,44 @@
         color: $grey1;
         position: relative;
 
+        @media (max-width:$md3+px) {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+        }
+
         &::before {
           content: "•";
           position: absolute;
           left: -1.5rem;
         }
       }
+    }
+
+    ul:last-child {
+      @media (max-width:$md3+px) {
+        max-width: 52%;
+      }
+    }
+  }
+}
+
+.mobile-organicImage {
+  display: none;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+
+  @media (max-width:$md3+px) {
+    display: flex;
+  }
+
+  picture {
+    width: 50%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
