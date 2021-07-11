@@ -1,0 +1,129 @@
+.info1 {
+  margin-bottom: 6.4rem;
+
+  &__header {
+    margin-bottom: 4.8rem;
+
+    @media (max-width:$md3+px) {
+      margin-bottom: 2.4rem;
+    }
+
+    h3 {
+      @include h3;
+      font-weight: 700;
+      color: $black1;
+
+      @media (max-width:$md3+px) {
+        @include medium;
+        font-weight: 600;
+      }
+    }
+
+  }
+
+  &__left {
+    width: 50%;
+
+    @media (max-width:$md3+px) {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      transform: translateX(-9.5rem);
+    }
+
+  }
+
+  &__right {
+    width: 50%;
+    padding: 2.9rem 0;
+
+    @media (max-width:$md3+px) {
+      width: 100%;
+      padding: 0;
+    }
+
+    .text__container {
+      color: $grey1;
+      align-items: center;
+
+      @media (max-width:$md3+px) {
+        justify-content: space-between;
+      }
+
+      .text__left {
+        min-width: 8.2rem;
+        min-height: 8.2rem;
+        font-size: 9.6rem;
+        line-height: 6.16rem;
+        font-weight: 700;
+        color: $black1;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2.4rem;
+
+        @media (max-width:$md3+px) {
+          min-width: 7.2rem;
+          min-height: 7.2rem;
+          font-size: 6.4rem;
+          margin-bottom: 1.3rem;
+          margin-right: 0;
+        }
+      }
+
+      .text__right {
+        @media (max-width:$md3+px) {
+          max-width: 70%;
+        }
+
+        p {
+          max-width: 42.4rem;
+          @include small;
+          line-height: 2.4rem;
+
+          @media (max-width:$md3+px) {
+            @include mobileSmall;
+
+          }
+        }
+      }
+
+      >h6 {
+        @include h6;
+        font-weight: 600;
+        margin-bottom: 1rem
+      }
+
+      >p {
+        @include small;
+        line-height: 2.4rem;
+      }
+
+    }
+
+    .text__container:not(:last-child) {
+      margin-bottom: 2.4rem;
+
+      @media (max-width:$md3+px) {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .text__container:last-child {
+      @media (max-width:$md3+px) {
+        .text__left {
+          display: none;
+        }
+
+        .text__right {
+          max-width: 100%;
+
+          p {
+            max-width: 31rem;
+          }
+        }
+      }
+    }
+  }
+}

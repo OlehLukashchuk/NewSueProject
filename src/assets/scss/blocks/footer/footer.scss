@@ -1,10 +1,24 @@
 .footer {
-  margin-top: 6.4rem;
-  padding: 5.6rem 9.6rem;
   background-color: $primary;
 
+  &__container {
+    padding: 5.6rem 0;
 
-  &__socialLinks{
-    margin-top: 4.4rem;
+    @media (max-width:$md3+px) {
+      padding: 3.3rem 2.4rem;
+    }
+  }
+
+  &__content {
+    justify-content: space-between;
+
+  }
+
+  &__socialLinks {
+    margin-top: 2.8rem;
+
+    @media (max-width:$md3+px) {
+      margin: 0;
+    }
   }
 }

@@ -1,0 +1,12 @@
+.mobile-arrow {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background: url('../images/arrow-down.svg')
+}
+
+.mobile-arrow._open {
+  background: url('../images/arrow-up.svg')
+}

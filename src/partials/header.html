@@ -1,36 +1,137 @@
 <header class="header">
-  <div class="flexbox">
-    <div class="header__logo">
+  <div class="header__content flexbox _container">
+    <div class="burger-menu">
+      <span></span>
+    </div>
+    <div class="header__content-logo">
       <img src="./assets/images/LOGO.svg" alt="" />
     </div>
-      <nav class="header__nav">
-        <ul class="flexbox header__menu">
-          <li><a href="" id="catalog">Каталог</a></li>
-          <li><a href="">Про нас</a></li>
-          <li><a href="">Відгуки</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">ua</a></li>
-        </ul>
-      </nav>
-      <form action="/" class="flexbox header__form ">
-        <button class="header__button button-search"></button>
-        <div class="header__link link-profile"><a href=""></a></div>
-        <div class="header__link link-heart"><a href=""></a></div>
-        <div class="header__link link-store"><a href=""></a></div>
-      </form>
-  </div>
-  <!-- <div class="header__catalog"> -->
-    <nav class="header__subnav catalog-subnav">
-      <ul class="flexbox catalog-subnav__menu">
-        <li class="catalog-subnav__item"><a href="">Косметика для обличчя</a></li>
-        <li class="catalog-subnav__item"><a href="">Косметика для тіла</a></li>
-        <li class="catalog-subnav__item"><a href="">Косметика для волосся</a></li>
-        <li class="catalog-subnav__item"><a href="">Вікова косметика (45+)</a></li>
-        <li class="catalog-subnav__item"><a href="">Комплексний догляд</a></li>
-        <li class="catalog-subnav__item"><a href="">Сонцезахисна косметика</a></li>
-        <li class="catalog-subnav__item"><a href="">Аксесуари</a></li>
-        <li class="catalog-subnav__item"><a href="">Подарнункові сертифікати</a></li>
+    <nav class="header__content-nav">
+      <ul class="flexbox header__content-menu">
+        <li><a href="" id="catalog">Каталог</a></li>
+        <li><a href="" id="about">Про нас</a></li>
+        <li><a href="">Відгуки</a></li>
+        <li><a href="">FAQ</a></li>
       </ul>
     </nav>
-  <!-- </div> -->
+    <button class="header-lang">ua</button>
+    <form action="/" class="flexbox header__content-form">
+      <button class="header__button button-search"></button>
+      <div class="header__link link-profile"><a href=""></a></div>
+      <div class="header__link link-heart"><a href=""></a></div>
+      <div class="header__link link-store"><a href=""></a></div>
+    </form>
+    <div class="subnav__container subnav1">
+      <nav class="header__subnav catalog-subnav flexbox">
+        <ul class="catalog-subnav__menu">
+          <li class="catalog-subnav__item">
+            <a href="">Косметика для обличчя</a>
+          </li>
+          <li class="catalog-subnav__item">
+            <a href="">Косметика для тіла</a>
+          </li>
+          <li class="catalog-subnav__item">
+            <a href="">Косметика для волосся</a>
+          </li>
+        </ul>
+        <ul class="catalog-subnav__menu">
+          <li class="catalog-subnav__item">
+            <a href="">Вікова косметика (45+)</a>
+          </li>
+          <li class="catalog-subnav__item">
+            <a href="">Комплексний догляд</a>
+          </li>
+          <li class="catalog-subnav__item">
+            <a href="">Сонцезахисна косметика</a>
+          </li>
+        </ul>
+        <ul class="catalog-subnav__menu">
+          <li class="catalog-subnav__item"><a href="">Аксесуари</a></li>
+          <li class="catalog-subnav__item">
+            <a href="">Подарнункові сертифікати</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--subnav__container-->
+    <div class="subnav__container subnav2">
+      <nav class="header__subnav about-subnav flexbox">
+        <ul class="about-subnav__menu">
+          <li class="about-subnav__item">
+            <a href="">Наші цінності</a>
+          </li>
+          <li class="about-subnav__item">
+            <a href="">Сертифікати</a>
+          </li>
+          <li class="about-subnav__item">
+            <a href="">Sue блог</a>
+          </li>
+          <li class="about-subnav__item">
+            <a href="">Доставка та оплата</a>
+          </li>
+        </ul>
+        <ul class="about-subnav__menu">
+        </ul>
+      </nav>
+    </div>
+    <!--subnav__container-->
+    <div class="mobile-menu">
+      <div class="mobile-menu__search">
+        <input
+          type="text"
+          placeholder="Напиши, що шукаєш"
+          class="input-search"
+        />
+      </div>
+      <!--mobile-menu__search-->
+      <nav class="mobile-menu__nav _container">
+        <ul>
+          <li class="flexbox">
+            <div class="mobile-subnav__catalog flexbox">
+              <button class="mobile-catalog">Каталог</button>
+              <button class="mobile-arrow arrow-catalog"></button>
+            </div>
+            <div class="mobile-subnav__container subnav-catalog">
+              <ul class="mobile-subnav">
+                <li><a href="">Косметика для обличчя</a></li>
+                <li><a href="">Косметика для тіла</a></li>
+                <li><a href="">Косметика для волосся</a></li>
+                <li><a href="">Вікова косметика (45+)</a></li>
+                <li><a href="">Комплексний догляд</a></li>
+                <li><a href="">Сонцезахисна косметика</a></li>
+                <li><a href="">Аксесуари</a></li>
+                <li><a href="">Подарнункові сертифікати</a></li>
+              </ul>
+            </div>
+            <!--subnav-catalog-->
+          </li>
+          <li>
+            <div class="mobile-subnav__about flexbox">
+              <button class="mobile-about">Про нас</button>
+              <button class="mobile-arrow arrow-about"></button>
+            </div>
+            <div class="mobile-subnav__container subnav-about">
+              <ul class="mobile-subnav">
+                <li><a href="">Наші цінності</a></li>
+                <li><a href="">Сертифікати</a></li>
+                <li><a href="">Sue блог</a></li>
+                <li><a href="">Доставка та оплата</a></li>
+              </ul>
+            </div>
+            <!--subnav-about-->
+          </li>
+          <li><a href="">Відгуки</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Контакти</a></li>
+        </ul>
+      </nav>
+      <!--mobile-menu__nav-->
+      <div class="mobile-menu__footer flexbox _container">
+        <a href="">Мій профіль</a>
+        <button class="mobile-lang">ua</button>
+      </div>
+    </div>
+    <!--mobile-menu-->
+  </div>
+  <!--header__content-->
 </header>

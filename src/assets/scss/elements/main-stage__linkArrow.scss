@@ -1,0 +1,17 @@
+.main-stages__linkArrow {
+  width: 4.8rem;
+  height: 4.8rem;
+  background: url('../images/greetingsArrow.svg') no-repeat center;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s ease, opacity 1s ease;
+
+  @media (max-width:$md3+px) {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url('../images/mainStages-arrowMobile.svg') no-repeat center;
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -1,18 +1,8 @@
 /* Base */
-
 @import './base/reset';
 @import './base/variables';
 @import './base/mixin';
-
-@font-face {
-    font-family: 'MontserratAlt-Bold';
-    src: url('../fonts/MontserratAlternates-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'MontserratAlt-Medium';
-    src: url('../fonts/MontserratAlternates-Medium.ttf');
-}
+@import "https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600,700&display=swap&subset=cyrillic-ext";
 
 html {
     font-size: 62.5%;
@@ -22,7 +12,7 @@ body {
     background-color: white;
     font-size: 1.4rem;
     color: white;
-    font-family: 'MontserratAlt-Medium';
+    font-family: 'Montserrat Alternates';
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -34,43 +24,60 @@ body {
 
 }
 
+.wrapper {
+    max-width: $maxWidth;
+    min-width: $minWidth;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+._container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+
+    @media (max-width:$md1+px) {
+        max-width: 970px;
+    }
+
+    @media (max-width:$md2+px) {
+        max-width: 750px;
+    }
+
+    @media (max-width:$md3+px) {
+        max-width: none;
+        padding: 0 24px;
+    }
+}
 
 /* Blocks */
-@import './page.scss';
 @import './base/flexbox.scss';
 @import './blocks/header/header.scss';
 @import './blocks/header/header__nav.scss';
 @import './blocks/header/header__form.scss';
 @import './blocks/header/header__subnav.scss';
+@import './blocks/header/mobile-menu.scss';
 @import './blocks/main/section__products/products.scss';
 @import './blocks/main/section__greetings/greetings.scss';
-@import './blocks/main/section__greetings/greetings__header.scss';
-@import './blocks/main/section__greetings/greetings__main.scss';
-@import './blocks/main/section__greetings/greetings__text.scss';
-@import './blocks/main/section__greetings/greetings__footer.scss';
-@import './blocks/main/section__info/info.scss';
-@import './blocks/main/section__info/info__parallax.scss';
-@import './blocks/main/section__info/info__header.scss';
-@import './blocks/main/section__info/info__content.scss';
-@import './blocks/main/section__info/content__element.scss';
-@import './blocks/main/section__info/text__container.scss';
+@import './blocks/main/section__main-stages/main-stages.scss';
+@import './blocks/main/section__organic/organic.scss';
+@import './blocks/main/section__info/info1.scss';
+@import './blocks/main/section__info/info2.scss';
+@import './blocks/main/section__info/info3.scss';
 @import './blocks/footer/footer.scss';
 @import './blocks/footer/footer__element.scss';
 @import './blocks/footer/footer__socialLinks.scss';
 
 /* Elements */
-// @import './elements/main__menu.scss';
+@import './elements/burger-menu.scss';
+@import './elements/mobile-arrow.scss';
+@import './elements/banner.scss';
 @import './elements/button-search.scss';
 @import './elements/link-profile.scss';
 @import './elements/link-heart.scss';
 @import './elements/link-store.scss';
-@import './elements/catalog__nav.scss';
 @import './elements/product-element.scss';
-@import './elements/product-button.scss';
 @import './elements/product-link.scss';
 @import './elements/greetings-link.scss';
-@import './elements/greetings__linkArrow.scss';
+@import './elements/main-stage__linkArrow.scss';
+@import './elements/parallax.scss';
 @import './elements/footer__list.scss';
-
-
-

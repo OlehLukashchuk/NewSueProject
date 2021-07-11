@@ -30,6 +30,7 @@
   font-size: $size;
   line-height: $height;
 }
+
 //HEADING
 
 //TEXTS
@@ -52,22 +53,29 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin mobileSmall($size: 12px, $height : 18px) {
+  font-size: $size;
+  line-height: $height;
+}
+
 //TEXTS
 
 //FONTS
 
 /* After */
-@mixin elementAfter($content,$bgColor){
-  content : $content;
-  background-color : $bgColor;
+@mixin elementAfter($content, $bgColor) {
+  content: $content;
+  background-color: $bgColor;
 }
+
 /* After */
 
 
 
 /* Buttons */
 
-@mixin littleButton(){
+@mixin littleButton() {
   width: 2.4rem;
   height: 2.4rem;
   background-color: transparent;

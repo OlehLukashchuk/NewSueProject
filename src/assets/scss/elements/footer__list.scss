@@ -1,13 +1,35 @@
 .footer__list {
+  @media (max-width:$md3+px) {
+    padding-right: 2.5rem;
+  }
+
+  ul:first-child {
+    @media (max-width:$md3+px) {
+      padding-top: 1rem;
+    }
+  }
+
   li {
     margin-bottom: 0.8rem;
+    @include small;
     line-height: 2.4rem;
+    color: $white;
+
+    @media (max-width:$md3+px) {
+      @include mobileSmall;
+
+    }
 
     a {
       text-decoration: none;
       @include small;
       line-height: 2.4rem;
       color: $white;
+
+      @media (max-width:$md3+px) {
+        @include mobileSmall;
+
+      }
     }
   }
 }
