@@ -47,8 +47,8 @@
       }
 
       @media (max-width:$md3+px) {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        @include mobileSmall;
+
       }
     }
 
@@ -69,8 +69,8 @@
         position: relative;
 
         @media (max-width:$md3+px) {
-          font-size: 1.2rem;
-          line-height: 1.8rem;
+          @include mobileSmall;
+
         }
 
         &::before {

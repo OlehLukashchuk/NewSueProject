@@ -28,6 +28,7 @@ body {
     max-width: $maxWidth;
     min-width: $minWidth;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 ._container {

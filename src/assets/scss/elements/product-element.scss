@@ -1,10 +1,10 @@
 .product-element {
   width: 23.6rem;
-  padding-right: 3.3rem;
+  padding: 0 1.6rem;
 
   @media (max-width:$md3+px) {
     width: 15.2rem;
-    padding: 0;
+    padding: 0 5px;
   }
 
   &__image {
@@ -21,8 +21,7 @@
       background-color: $error;
 
       @media (max-width:$md3+px) {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        @include mobileSmall;
         padding: 5px;
       }
     }

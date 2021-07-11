@@ -16,8 +16,8 @@
     color: $white;
 
     @media (max-width:$md3+px) {
-      font-size: 1.2rem;
-      line-height: 1.8rem;
+      @include mobileSmall;
+
     }
 
     a {
@@ -27,8 +27,8 @@
       color: $white;
 
       @media (max-width:$md3+px) {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        @include mobileSmall;
+
       }
     }
   }

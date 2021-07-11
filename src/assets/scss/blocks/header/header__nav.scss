@@ -1,6 +1,10 @@
 .header__content-nav {
   margin-right: 7.2rem;
 
+  @media (max-width:$md3+px) {
+    display: none;
+  }
+
   .header__content-menu {
     li {
       padding: 3.4rem 0rem;
@@ -22,8 +26,6 @@
     li:not(:last-child) {
       margin-right: 7.2rem;
     }
-    @media (max-width:$md3+px) {
-      display: none;
-    }
+
   }
 }

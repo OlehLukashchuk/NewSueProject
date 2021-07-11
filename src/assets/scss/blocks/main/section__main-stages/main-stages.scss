@@ -62,8 +62,8 @@
       @include normal;
 
       @media (max-width:$md3+px) {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        @include mobileSmall;
+
       }
     }
 
@@ -85,8 +85,8 @@
       border-bottom: 2px solid #888440 !important;
 
       @media (max-width:$md3+px) {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        @include mobileSmall;
+
       }
     }
   }
